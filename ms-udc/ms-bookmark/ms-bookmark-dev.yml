@@ -1,6 +1,11 @@
 server:
   port: 8010
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/  
+
 spring:
   application:
     name: bookmark-service
@@ -9,8 +14,3 @@ spring:
         host: 172.16.12.27
         prot: 27017
         database: springcloud
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8888/eureka/
