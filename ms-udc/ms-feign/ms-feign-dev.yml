@@ -2,7 +2,7 @@ server:
   port: 9999
 spring:
   application:
-    name: ms-feign
+    name: feign
     
 eureka:
   client:
