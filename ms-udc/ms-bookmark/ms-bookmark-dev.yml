@@ -14,14 +14,13 @@ spring:
         host: 172.16.12.27
         prot: 27017
         database: springcloud
-#暴露接口
+#暴露配置刷新接口
 management:
   endpoints:
     web:
       exposure:
-        #include: ["health","info","bus-refresh"]
         include: refresh
         
 #用于配置测试  
-name: graves123     
+name: graves
 

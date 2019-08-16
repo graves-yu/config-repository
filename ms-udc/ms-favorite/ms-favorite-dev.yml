@@ -14,6 +14,13 @@ spring:
         host: 172.16.12.27
         prot: 27017
         database: springcloud
+       
+#暴露配置刷新接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
         
 #用于配置测试  
 name: graves
