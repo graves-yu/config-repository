@@ -14,3 +14,6 @@ spring:
         host: 172.16.12.27
         prot: 27017
         database: springcloud
+        
+#用于配置测试  
+name: graves
