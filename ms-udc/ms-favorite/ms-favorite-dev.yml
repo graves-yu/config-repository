@@ -15,12 +15,14 @@ spring:
         prot: 27017
         database: springcloud
        
-#暴露配置刷新接口 刷新配置地址为：http://localhost:8020/actuator/refresh  post请求
+#暴露接口
 management:
+  security:
+      enabled: false
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: "*"
         
 #用于配置测试
-name: graves
+name: graves123
