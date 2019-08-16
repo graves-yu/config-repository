@@ -19,8 +19,8 @@ management:
   endpoints:
     web:
       exposure:
-        include: ["health","info","bus-refresh"]
-        
+        #include: ["health","info","bus-refresh"]
+        include: refresh
         
 #用于配置测试  
 name: graves     
