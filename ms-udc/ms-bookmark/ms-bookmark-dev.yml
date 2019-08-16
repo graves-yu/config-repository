@@ -14,7 +14,13 @@ spring:
         host: 172.16.12.27
         prot: 27017
         database: springcloud
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+        
         
 #用于配置测试  
-name: graves123      
+name: graves     
 
