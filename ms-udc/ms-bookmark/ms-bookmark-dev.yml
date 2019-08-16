@@ -14,7 +14,7 @@ spring:
         host: 172.16.12.27
         prot: 27017
         database: springcloud
-#暴露配置刷新接口
+#暴露配置刷新接口 刷新配置地址为：http://localhost:8010/actuator/refresh  post请求
 management:
   endpoints:
     web:
