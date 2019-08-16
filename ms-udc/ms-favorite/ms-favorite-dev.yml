@@ -25,4 +25,4 @@ management:
         include: "*"
         
 #用于配置测试
-name: graves123
+name: graves
