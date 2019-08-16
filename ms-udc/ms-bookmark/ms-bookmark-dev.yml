@@ -19,7 +19,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: *
         
 #用于配置测试  
 name: graves
