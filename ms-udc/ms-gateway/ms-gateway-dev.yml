@@ -9,9 +9,6 @@ eureka:
 spring:
   application:
       name: gateway
-  redis:
-    host: 172.16.0.36
-    port: 6379
   cloud:
     gateway:
       routes:
@@ -21,15 +18,5 @@ spring:
         predicates:
           - Path=/*/**
         # /*/** 匹配 路由为 /bookmark/getBookmarkList、 /favorite/getFavoriteList 等请求
-        filters:
-        - name: RequestRateLimiter
-          #filter名称必须是RequestRateLimiter
-          args:
-            redis-rate-limiter.replenishRate: 1
-            redis-rate-limiter.burstCapacity: 1
-            key-resolver: "#{@ipKeyResolver}"
-            #redis-rate-limiter.replenishRate：允许用户每秒处理多少个请求
-            #redis-rate-limiter.burstCapacity：令牌桶的容量，允许在一秒钟内完成的最大请求数
-            #key-resolver：使用SpEL按名称引用bean
-
+        
 
