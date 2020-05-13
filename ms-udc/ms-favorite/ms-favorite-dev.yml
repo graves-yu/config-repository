@@ -11,7 +11,7 @@ spring:
     name: favorite-service
   data:
      mongodb:
-        host: 172.16.12.27
+        host: 172.16.12.9
         prot: 27017
         database: springcloud
        
